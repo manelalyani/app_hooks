@@ -1,0 +1,41 @@
+export const listmovie = [
+    {
+        id:0,
+        name:'Smile | Official Website | September 30 2022',
+        image:"https://media.npr.org/assets/img/2022/07/25/moviestill2_custom-717caa5dc12a74098925c048754fa2e19aff431e.jpg",
+        desc:"description 1",
+        rating:1 ,
+        date:"20-2-2019",
+    },
+    {
+        id:1,
+        name:'Films – Films et TV sur Google Play',
+        image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqCofVn8BH1xVvNYdiK2mA7awS8BvMUbJnqk6UVQIwV_zFUxSHhKQvMO0pXhG6Xz-lONk&usqp=CAU",
+        desc:"description 2",
+        rating:4 ,
+        date:"20-2-2019",
+    },
+    {
+        id:2,
+        name:'Shazam: Fury Of The Gods Movie: Showtimes, Review,',
+image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDxV2Cvsf9gijKsftjW1bd6jQGpCEZ5JrmsNGisfPlL3-1Vlou0dJ755n3vHwO6f71D3c&usqp=CAU",
+        desc:"description 3",
+        rating:2 ,
+        date:"20-2-2019",
+    },
+    {
+        id:3,
+        name:'30 Highest-Grossing G-Rated Movies of All Time',
+        image:"https://i0.wp.com/borg.com/wp-content/uploads/2023/02/marvel-fam-banner.jpg?resize=450%2C450&ssl=1",
+        desc:"description 4",
+        rating:2 ,
+        date:"20-2-2019",
+    },  {
+        id:7,
+        name:'Voter New Hindi Dubbed Full Movie (2021) | Latest Hindi',
+        image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTXYxytVlEUobkIZjjpZfVLYDXMGmsc-NXJw&usqp=CAU",
+        desc:"description 5",
+        rating:3 ,
+        date:"20-2-2019",
+    },
+]

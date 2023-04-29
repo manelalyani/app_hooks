@@ -6,6 +6,7 @@ export const listmovie = [
         desc:"description 1",
         rating:1 ,
         date:"20-2-2019",
+        trailer:"https://www.youtube.com/embed/v5O9B0FKxeg",
     },
     {
         id:1,
@@ -14,6 +15,7 @@ export const listmovie = [
         desc:"description 2",
         rating:4 ,
         date:"20-2-2019",
+        trailer:"https://www.youtube.com/embed/5o_sGQFrKDo",
     },
     {
         id:2,
@@ -22,6 +24,7 @@ image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDxV2Cvsf9gijKsftjW
         desc:"description 3",
         rating:2 ,
         date:"20-2-2019",
+        trailer:"https://www.youtube.com/embed/5o_sGQFrKDo",
     },
     {
         id:3,
@@ -30,6 +33,7 @@ image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDxV2Cvsf9gijKsftjW
         desc:"description 4",
         rating:2 ,
         date:"20-2-2019",
+        trailer:"https://www.youtube.com/embed/v5O9B0FKxeg",
     },  {
         id:7,
         name:'Voter New Hindi Dubbed Full Movie (2021) | Latest Hindi',
@@ -37,5 +41,6 @@ image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDxV2Cvsf9gijKsftjW
         desc:"description 5",
         rating:3 ,
         date:"20-2-2019",
+        trailer:"https://www.youtube.com/embed/5o_sGQFrKDo",
     },
 ]

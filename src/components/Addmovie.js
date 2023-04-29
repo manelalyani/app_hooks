@@ -4,10 +4,11 @@ import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
+import { useNavigate } from 'react-router-dom';
 
 function Addmovie({handleadd}) {
   const [show, setShow] = useState(false);
-
+const navigate=useNavigate();
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const [form,setForm]=useState({
@@ -16,6 +17,7 @@ function Addmovie({handleadd}) {
     desc:"",
     rating:0 ,
     date:"",
+    trailer:"",
 })
 const handlechange = (e) => {
   setForm(
@@ -34,6 +36,7 @@ const handleSabmit = (e) => {
    
     });
     handleClose();
+    navigate('/')
 };
 
   return (
@@ -86,6 +89,16 @@ const handleSabmit = (e) => {
                 autoFocus
                 onChange={handlechange}
                 value={form.desc}
+              />
+            </Form.Group>
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+              <Form.Label>trailer</Form.Label>
+              <Form.Control
+                type="text" name="trailer"
+                placeholder="trailer"
+                autoFocus
+                onChange={handlechange}
+                value={form.trailer}
               />
             </Form.Group>
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">

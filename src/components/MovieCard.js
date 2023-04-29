@@ -1,9 +1,10 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import { Link } from 'react-router-dom';
 import { Rating } from 'react-simple-star-rating'
 const MovieCard =({film})=> {
-    const{name, image , rating , date}=film;
+    const{id,name, image , rating , date}=film;
   return (
     <Card style={{ width: '18rem' ,margin:'10px' }}>
       <Card.Img variant="top" src={image} />
@@ -11,7 +12,9 @@ const MovieCard =({film})=> {
         <Card.Title>{name}</Card.Title>
         <Rating readonly initialValue={rating} />
         <Card.Text>{date}</Card.Text>
-        <Button variant="primary" style={{background:'violet',margin:'20px'}}>Go somewhere</Button>
+        <Link to={`/details/${id}`}>
+        <Button variant="primary">Go somewhere</Button>
+        </Link> 
       </Card.Body>
     </Card>
   );

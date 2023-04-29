@@ -2,11 +2,12 @@ import './App.css';
 import Addmovie from './components/Addmovie';
 
 import MovieList from './components/MovieList';
-import Filter from './components/Filter ';
 import SearchMovie from './components/SearchMovie';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState } from 'react';
 import {listmovie} from "./data.js";
+import { Route, Routes } from 'react-router-dom';
+import MovieDetails from './components/MovieDetails';
 function App() {
   const [movies ,setMovies]=useState (listmovie);
   const handleadd = (newmovie) => {
@@ -32,18 +33,22 @@ const handleReset = () => {
 }
   return (
     <div className="App" >
-        < SearchMovie
+        <Routes>
+          <Route path="/add" element={ <Addmovie handleadd={handleadd}/> }/>
+        <Route path="/" element = {<div>< SearchMovie
         rating={rating}
          handleReset={handleReset} 
         handleName={handleName} 
         handleRating={handleRating}/>
-      <Addmovie handleadd={handleadd}/>
       <MovieList movies={movies.filter(el=>el.name.includes(searchbyName) && el.rating >= rating)}/>
-      <Filter/>
-    
-      
-
-    </div>
+     
+      </div>
+        }
+       />
+      <Route path="/details/:idmovie" element ={<MovieDetails movies={movies}/>} />
+        </Routes>
+       
+</div>
   );
 }
 
